@@ -17,8 +17,8 @@ RUN apt-get update && \
  #   libsqlite3-0 \
  #   libsqlite3-dev \
  #   sqlite3 \
-    gdal-bin \
- #   libgdal-dev \
+ #   gdal-bin \
+    libgdal-dev \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
