@@ -47,4 +47,4 @@ RUN conda install --quiet --yes \
 
 
 RUN echo "install.packages('eurostat',repos='https://cloud.r-project.org')" > /tmp/install.R && \
-    Rscript /tmp/install.R && \
+    Rscript /tmp/install.R
