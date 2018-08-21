@@ -42,3 +42,8 @@ RUN conda install --quiet --yes \
     conda clean -tipsy && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
+
+RUN conda config --add channels r 
+
+RUN conda install --quiet --yes \
+    'r-eurostat=3.2*' 
