@@ -8,12 +8,12 @@ USER root
 
 # R pre-requisites
 RUN apt-get update && \
-    apt-get install libudunits2-0 && \
-    apt-get install libudunits2-dev && \
     apt-get install -y --no-install-recommends \
     fonts-dejavu \
     tzdata \
     gfortran \
+    libudunits2-0 \
+    libudunits2-dev \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
