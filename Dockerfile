@@ -8,6 +8,8 @@ USER root
 
 # R pre-requisites
 RUN apt-get update && \
+    apt-get install libudunits2-0 && \
+    apt-get install libudunits2-dev && \
     apt-get install -y --no-install-recommends \
     fonts-dejavu \
     tzdata \
