@@ -4,6 +4,16 @@ PRestat
 Python and R services to access and handle Eurostat data
 ---
 
+
+**TODO**
+
+Add `R` package `eurostat` to the service (Dockerfile).
+
+**Test**
+
+Current Dockerfile is an extension of the `Jupyter Data Science Stack`.
+You can run a notebook with both `R` and `Python` installed here: https://mybinder.org/v2/gh/eurostat/PRestat/master.
+
 **<a name="Sources"></a>Data sources**
 
 * EU open data initiatives: [pan-European public data infrastructure](http://data.europa.eu).
