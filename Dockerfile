@@ -45,3 +45,6 @@ RUN conda install --quiet --yes \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
 
+
+RUN echo "install.packages('eurostat',repos='https://cloud.r-project.org')" > /tmp/install.R && \
+    Rscript /tmp/install.R && \
