@@ -14,6 +14,8 @@ RUN apt-get update && \
     gfortran \
     libudunits2-0 \
     libudunits2-dev \
+    gdal-bin \
+    libgdal-dev \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
