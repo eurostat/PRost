@@ -14,6 +14,8 @@ RUN apt-get update && \
     gfortran \
     libudunits2-0 \
     libudunits2-dev \
+    libsqlite3-0 \
+    libsqlite3-dev \
     gdal-bin \
     libgdal-dev \
     gcc && apt-get clean && \
@@ -42,6 +44,7 @@ RUN conda install --quiet --yes \
     'r-htmltools=0.3*' \
     'r-sparklyr=0.7*' \
     'r-htmlwidgets=1.0*' \
+    'r-rsqlite=2.1* \
     'r-hexbin=1.27*' && \
     conda clean -tipsy && \
     fix-permissions $CONDA_DIR && \
