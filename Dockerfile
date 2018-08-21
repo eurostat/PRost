@@ -14,11 +14,11 @@ RUN apt-get update && \
     gfortran \
     libudunits2-0 \
     libudunits2-dev \
-    libsqlite3-0 \
-    libsqlite3-dev \
-    sqlite3 \
+ #   libsqlite3-0 \
+ #   libsqlite3-dev \
+ #   sqlite3 \
     gdal-bin \
-    libgdal-dev \
+ #   libgdal-dev \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -26,7 +26,7 @@ USER $NB_UID
 
 # R packages including IRKernel which gets installed globally.
 RUN conda install --quiet --yes \
-    'sqlite=3.13*' \
+ #   'sqlite=3.13*' \
     'rpy2=2.8*' \
     'r-base=3.4.1' \
     'r-irkernel=0.8*' \
