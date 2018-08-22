@@ -24,6 +24,7 @@ RUN apt-get update && \
     libssh2-1-dev \
     libgit2-26 \
     libgit2-dev \
+    libunwind-dev \
     gcc \
     build-essential \
     apt-utils \
@@ -85,6 +86,6 @@ RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > 
  #    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     Rscript /tmp/install.R
 
-USER $NB_UID
+# USER $NB_UID
 
-RUN fix-permissions /home/$NB_USER
+# RUN fix-permissions /home/$NB_USER
