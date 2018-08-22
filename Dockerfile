@@ -21,7 +21,7 @@ RUN apt-get update && \
     libssl-dev \
     libgdal-dev \
     libssh2-1 \
-    libgit2-24 \
+    libgit2-26 \
     gcc \
     build-essential \
     apt-utils \
