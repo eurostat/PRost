@@ -18,6 +18,9 @@ RUN apt-get update && \
  #   libsqlite3-dev \
  #   sqlite3 \
  #   gdal-bin \
+    openssl \
+    python-openssl \
+    libcurl4-openssl-dev \
     libgdal-dev \
     r-base \
     r-base-core \
