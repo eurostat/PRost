@@ -97,7 +97,7 @@ RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > 
 USER $NB_UID
 
 RUN echo "IRkernel::installspec();" > install.R && \
-    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> install.R && \
     Rscript install.R
 
 
