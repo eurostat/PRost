@@ -49,7 +49,7 @@ RUN apt-get update && \
     r-cran-reshape2 \
     r-cran-rcurl \
     r-cran-crayon \
-    r-cran-json \
+    r-cran-rjson \
     r-cran-jsonlite \
     r-cran-base64enc \
     r-cran-e1071 \
