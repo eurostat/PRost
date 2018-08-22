@@ -20,8 +20,8 @@ RUN apt-get update && \
     python3-rpy2 \
     libssl-dev \
     libgdal-dev \
-    libssh2 \
-    libgit2 \
+    libssh2-1 \
+    libgit2-24 \
     gcc \
     build-essential \
     apt-utils \
