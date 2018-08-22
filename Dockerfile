@@ -23,6 +23,7 @@ RUN apt-get update && \
     libssh2-1 \
     libssh2-1-dev \
     libgit2-26 \
+    libgit2-dev \
     gcc \
     build-essential \
     apt-utils \
