@@ -18,15 +18,15 @@ RUN apt-get update && \
  #   libsqlite3-dev \
  #   sqlite3 \
  #   gdal-bin \
- #   libgdal-dev \
+    libgdal-dev \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-USER $NB_UID
+# USER $NB_UID
 
 # R packages including IRKernel which gets installed globally.
 RUN conda install --quiet --yes \
-    'gdal=2.*' \
+ #   'gdal=2.*' \
     'rpy2=2.8*' \
     'r-base=3.4.1' \
     'r-irkernel=0.8*' \
