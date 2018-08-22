@@ -34,7 +34,7 @@ RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9 && \
 
 # install R
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+    apt-get install -y \
  #   libsqlite3-0 \
  #   libsqlite3-dev \
  #   sqlite3 \
