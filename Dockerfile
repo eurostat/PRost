@@ -6,9 +6,6 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
 USER root
 
-# Add the CRAN repository to apt sources
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 && \
-    add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
 
 
 
@@ -21,6 +18,22 @@ RUN apt-get update && \
     gfortran \
     libudunits2-0 \
     libudunits2-dev \
+    gnupg \
+    python-rpy2 \
+    python3-rpy2 \
+    libssl-dev \
+    libgdal-dev \
+    gcc \
+    build-essential \
+    software-properties-common
+
+# Add the CRAN repository to apt sources
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 && \
+    add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+
+# install R
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
  #   libsqlite3-0 \
  #   libsqlite3-dev \
  #   sqlite3 \
@@ -36,10 +49,16 @@ RUN apt-get update && \
     r-base-core \
     r-base-dev \
     r-cran-plyr \
+    r-cran-rsqlite \
+    r-cran-caret \
     r-cran-ggplot2 \
     r-cran-reshape2 \
-    gcc && apt-get clean && \
+    r-cran-rcurl \
+    r-cran-crayon \
+    r-cran-randomforest && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+
+
 
 # USER $NB_UID
 
