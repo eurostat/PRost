@@ -92,13 +92,12 @@ RUN apt-get update && \
 RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
     echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
  #   echo "IRkernel::installspec();" >> /tmp/install.R && \
- #    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
-    Rscript /tmp/install.R
+     Rscript /tmp/install.R
 
 USER $NB_UID
 
 RUN echo "IRkernel::installspec();" > install.R && \
- #    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     Rscript install.R
 
 
