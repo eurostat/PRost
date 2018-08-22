@@ -32,7 +32,6 @@ RUN apt-get update && \
 # install R
 RUN apt-get update && \
     apt-get install -y \
-    r-api \
     r-base \
     r-base-core \
     r-base-dev \
