@@ -7,9 +7,6 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 USER root
 
 
-
-
-
 # R pre-requisites
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -28,24 +25,14 @@ RUN apt-get update && \
     software-properties-common
 
 # Add the CRAN repository to apt sources
-RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9 && \
-    gpg -a --export E084DAB9 | apt-key add - && \
-    add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+# RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9 && \
+#    gpg -a --export E084DAB9 | apt-key add - && \
+#    add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
 
 # install R
 RUN apt-get update && \
     apt-get install -y \
- #   libsqlite3-0 \
- #   libsqlite3-dev \
- #   sqlite3 \
- #   gdal-bin \
- #   openssl \
- #   python-openssl \
- #   libcurl4-openssl-dev \
-    python-rpy2 \
-    python3-rpy2 \
-    libssl-dev \
-    libgdal-dev \
+    r-api \
     r-base \
     r-base-core \
     r-base-dev \
