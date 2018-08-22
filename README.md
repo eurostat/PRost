@@ -7,7 +7,7 @@ Python and R services to access and handle Eurostat data
 
 **TODO**
 
-Add `R` package `eurostat` to the service (Dockerfile).
+~~Add `R` package `eurostat` to the service (Dockerfile).~~
 
 **Test**
 
