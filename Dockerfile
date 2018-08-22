@@ -55,6 +55,8 @@ RUN apt-get update && \
     r-cran-e1071 \
     r-cran-stringr \
     r-cran-stringi \
+    r-cran-rcpp \
+    r-cran-rjava \
     r-cran-randomforest && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -95,9 +97,9 @@ RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > 
 
 USER $NB_UID
 
-RUN echo "IRkernel::installspec();" > /tmp/install.R && \
+RUN echo "IRkernel::installspec();" > install.R && \
  #    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
-    Rscript /tmp/install.R
+    Rscript install.R
 
 
 # RUN fix-permissions /home/$NB_USER
