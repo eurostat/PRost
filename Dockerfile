@@ -52,7 +52,6 @@ RUN apt-get update && \
 
 
 
-# USER $NB_UID
 
 # R packages including IRKernel which gets installed globally.
 # RUN conda install --quiet --yes \
@@ -78,8 +77,14 @@ RUN apt-get update && \
  #    'r-hexbin=1.27*' && \
  #    conda clean -tipsy && \
  #    fix-permissions $CONDA_DIR && \
- #    fix-permissions /home/$NB_USER
+ 
 
-
-RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');devtools::install_github('IRkernel/IRkernel');IRkernel::installspec();install.packages('eurostat',repos='https://cloud.r-project.org')" > /tmp/install.R && \
+RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
+    echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
+    echo "IRkernel::installspec();" >> /tmp/install.R && \
+ #    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     Rscript /tmp/install.R
+
+USER $NB_UID
+
+RUN fix-permissions /home/$NB_USER
