@@ -25,7 +25,7 @@ RUN apt-get update && \
     libgit2-26 \
     libgit2-dev \
     libunwind-dev \
-    libzmq-dev \
+    libzmq3-dev \
     gcc \
     build-essential \
     apt-utils \
@@ -49,6 +49,12 @@ RUN apt-get update && \
     r-cran-reshape2 \
     r-cran-rcurl \
     r-cran-crayon \
+    r-cran-json \
+    r-cran-jsonlite \
+    r-cran-base64enc \
+    r-cran-e1071 \
+    r-cran-stringr \
+    r-cran-stringi \
     r-cran-randomforest && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -81,8 +87,8 @@ RUN apt-get update && \
  #    fix-permissions $CONDA_DIR && \
  
 
-RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
-    echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
+#RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
+ RUN   echo "devtools::install_github('IRkernel/IRkernel');" > /tmp/install.R && \
  #   echo "IRkernel::installspec();" >> /tmp/install.R && \
  #    echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     Rscript /tmp/install.R
