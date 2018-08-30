@@ -1,7 +1,7 @@
-PRestat
+PRost
 =======
 
-Python and R services to access and handle Eurostat data
+Python and R for official statistics: self-contained services to access and handle _Eurostat_ data
 ---
 
 
