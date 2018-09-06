@@ -6,7 +6,6 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
 USER root
 
-
 # R pre-requisites
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -46,11 +45,6 @@ RUN apt-get update && \
     r-cran-rsqlite \
     r-cran-caret \
     r-cran-ggplot2 \
-    r-cran-ggrepel \
-    r-cran-ggraph \
-    r-cran-ggiraph \
-    r-cran-ggnetwork \
-    r-cran-ggTimeSeries \        
     r-cran-reshape2 \
     r-cran-rcurl \
     r-cran-crayon \
@@ -65,8 +59,12 @@ RUN apt-get update && \
     r-cran-randomforest && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-
-
+# unable to locate those packages:
+#    r-cran-ggrepel \
+#    r-cran-ggraph \
+#    r-cran-ggiraph \
+#    r-cran-ggnetwork \
+#    r-cran-ggTimeSeries         
 
 # R packages including IRKernel which gets installed globally.
 # RUN conda install --quiet --yes \
@@ -94,15 +92,18 @@ RUN apt-get update && \
  #    fix-permissions $CONDA_DIR && \
  #    fix-permissions /home/$NB_USER
 
-
 RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
     echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
     echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+    echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
+    echo "install.packages('ggraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
+    echo "install.packages('ggiraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
+    echo "install.packages('ggnetwork',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
+    echo "install.packages('ggTimeSeries',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
     Rscript /tmp/install.R
 
 USER $NB_UID
 
 RUN echo "IRkernel::installspec();" > install.R && \
     Rscript install.R
-
-
+    
