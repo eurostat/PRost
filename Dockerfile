@@ -95,12 +95,14 @@ RUN apt-get update && \
 RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
     echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
     echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
-    echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
-    echo "install.packages('ggraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
-    echo "install.packages('ggiraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
-    echo "install.packages('ggnetwork',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
-    echo "install.packages('ggTimeSeries',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
     Rscript /tmp/install.R
+    
+#RUN echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" > /tmp/install.R && \
+#    echo "install.packages('ggraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
+#    echo "install.packages('ggiraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
+#    echo "install.packages('ggnetwork',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
+#    echo "install.packages('ggTimeSeries',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
+#    Rscript /tmp/install.R
 
 USER $NB_UID
 
