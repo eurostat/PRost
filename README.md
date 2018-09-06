@@ -6,7 +6,7 @@ Python and R for official statistics: self-contained services to access and hand
 
 **Run**
 
-Run a **notebook with both `R` and `Python`** installed [here](https://mybinder.org/v2/gh/eurostat/PRestat/master), as well as the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package.
+Run a **notebook with both `R` and `Python`** installed, as well as the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package, **[at this address](https://mybinder.org/v2/gh/eurostat/PRestat/master)**.
 
 **Examples**
 
