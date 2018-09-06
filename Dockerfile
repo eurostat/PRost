@@ -59,13 +59,6 @@ RUN apt-get update && \
     r-cran-randomforest && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# unable to locate those packages:
-#    r-cran-ggrepel \
-#    r-cran-ggraph \
-#    r-cran-ggiraph \
-#    r-cran-ggnetwork \
-#    r-cran-ggTimeSeries         
-
 # R packages including IRKernel which gets installed globally.
 # RUN conda install --quiet --yes \
  #    'rpy2=2.8*' \
@@ -95,10 +88,18 @@ RUN apt-get update && \
 RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
     echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
     echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+    echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" > /tmp/install.R && \
     Rscript /tmp/install.R
     
-RUN echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" > /tmp/install.R && \
-    Rscript /tmp/install.R
+# ggplot2 add-ons
+# unable to locate those packages:
+#    r-cran-ggrepel \
+#    r-cran-ggraph \
+#    r-cran-ggiraph \
+#    r-cran-ggnetwork \
+#    r-cran-ggTimeSeries         
+#RUN echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" > /tmp/install.R && \
+#    Rscript /tmp/install.R
 #    echo "install.packages('ggraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
 #    echo "install.packages('ggiraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
 #    echo "install.packages('ggnetwork',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
