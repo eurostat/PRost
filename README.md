@@ -4,11 +4,6 @@ PRost
 Python and R for official statistics: self-contained services to access and handle _Eurostat_ data
 ---
 
-
-**TODO**
-
-~~Add `R` package `eurostat` to the service (Dockerfile).~~
-
 **Test**
 
 Current Dockerfile is an extension of the `Jupyter Data Science Stack`.
