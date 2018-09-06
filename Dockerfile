@@ -46,6 +46,11 @@ RUN apt-get update && \
     r-cran-rsqlite \
     r-cran-caret \
     r-cran-ggplot2 \
+    r-cran-ggrepel \
+    r-cran-ggraph \
+    r-cran-ggiraph \
+    r-cran-ggnetwork \
+    r-cran-ggTimeSeries \        
     r-cran-reshape2 \
     r-cran-rcurl \
     r-cran-crayon \
