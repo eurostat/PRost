@@ -25,6 +25,9 @@ RUN apt-get update && \
     libgit2-dev \
     libunwind-dev \
     libzmq3-dev \
+    libcairo2-dev \
+    libopenblas-base \
+    libopenblas-dev \
     gcc \
     build-essential \
     apt-utils \
