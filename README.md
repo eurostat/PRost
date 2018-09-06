@@ -4,10 +4,20 @@ PRost
 Python and R for official statistics: self-contained services to access and handle _Eurostat_ data
 ---
 
-**Test**
+**Run**
 
-Current Dockerfile is an extension of the `Jupyter Data Science Stack`.
-You can run a notebook with both `R` and `Python` installed here: https://mybinder.org/v2/gh/eurostat/PRestat/master.
+Run a **notebook with both `R` and `Python`** installed [here](https://mybinder.org/v2/gh/eurostat/PRestat/master), as well as the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package.
+
+**Examples**
+
+* a [quick and dirty notebook](https://nbviewer.jupyter.org/github/eurostat/PRost/blob/master/notebooks/eurostat_package_tutorial.ipynb) reproducing the tutorial for `R eurostat` package.
+* ...
+
+**Notes**
+
+The notebook is running on the [binder](https://mybinder.org/) platform, which automatically turns the `Dockerfile` in this repository into an interactive notebook.
+
+Current `Dockerfile` is an extension of the `Jupyter Data Science Stack`.
 
 **<a name="Sources"></a>Data sources**
 
