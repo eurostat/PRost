@@ -88,18 +88,17 @@ RUN apt-get update && \
 RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
     echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
     echo "install.packages('eurostat',repos='https://cloud.r-project.org')" >> /tmp/install.R && \
-    echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" > /tmp/install.R && \
     Rscript /tmp/install.R
     
 # ggplot2 add-ons
-# unable to locate those packages:
+# this one is unable to locate the packages:
 #    r-cran-ggrepel \
 #    r-cran-ggraph \
 #    r-cran-ggiraph \
 #    r-cran-ggnetwork \
-#    r-cran-ggTimeSeries         
+#    r-cran-ggTimeSeries     
+# and this one simply crashes:
 #RUN echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" > /tmp/install.R && \
-#    Rscript /tmp/install.R
 #    echo "install.packages('ggraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
 #    echo "install.packages('ggiraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
 #    echo "install.packages('ggnetwork',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
