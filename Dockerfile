@@ -90,7 +90,7 @@ RUN apt-get update && \
 
 RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
     echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
-    echo "install.packages(c('eurostat','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+    echo "install.packages(c('eurostat','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
 # ggplot2 add-ons
@@ -110,6 +110,7 @@ RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > 
 
 USER $NB_UID
 
-RUN echo "IRkernel::installspec();" > install.R && \
+RUN wget https://github.com/eurostat/PRost/blob/master/notebooks/eurostat_package_test.ipynb && \
+    echo "IRkernel::installspec();" > install.R && \
     Rscript install.R
     
