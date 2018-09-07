@@ -4,6 +4,20 @@ PRost
 Python and R for official statistics: self-contained services to access and handle _Eurostat_ data
 ---
 
+This project is part of the Methodological Network initiative on user interfaces to _Eurostat_ online database.
+
+<table align="center">
+    <tr> <td align="left"><i>status</i></td> <td align="left">since 2018 &ndash; <b>on-going</b></td></tr> 
+    <tr> <td align="left"><i>contributors</i></td> 
+    <td align="left" valign="middle">
+<a href="https://github.com/gjacopo"><img src="https://github.com/mmatyi.png" width="40"></a>
+<a href="https://github.com/gjacopo"><img src="https://github.com/gjacopo.png" width="40"></a>
+<a href="https://github.com/gjacopo"><img src="https://github.com/reisfe.png" width="40"></a>
+<a href="https://github.com/gjacopo"><img src="https://github.com/oloski.png" width="40"></a>
+</td> </tr> 
+    <tr> <td align="left"><i>license</i></td> <td align="left"><a href="https://joinup.ec.europa.eu/sites/default/files/eupl1.1.-licence-en_0.pdfEUPL">EUPL</a> </td> </tr> 
+</table>
+
 **Run**
 
 [**Run a notebook with both `R` and `Python`**](https://mybinder.org/v2/gh/eurostat/PRost/master) installed together with the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package.
