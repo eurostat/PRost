@@ -20,9 +20,11 @@ This project is part of the Methodological Network initiative on user interfaces
 
 **Run**
 
-[**Run a notebook with both `R` and `Python`**](https://mybinder.org/v2/gh/eurostat/PRost/master) installed together with the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package.
+[**Launch a notebook with both `R` and `Python`**](https://mybinder.org/v2/gh/eurostat/PRost/master) installed together with the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package.
 
 **Examples**
+
+Run your own script into a notebook, like in the examples below:
 
 * a [quick and dirty notebook](https://nbviewer.jupyter.org/github/eurostat/PRost/blob/master/notebooks/eurostat_package_tutorial.ipynb) reproducing the tutorial for `R eurostat` package.
 * an [R test notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_package_test.ipynb) 
