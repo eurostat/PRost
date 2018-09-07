@@ -93,24 +93,11 @@ RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > 
     echo "install.packages(c('eurostat','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
-# ggplot2 add-ons
-# this one is unable to locate the packages:
-#    r-cran-ggrepel \
-#    r-cran-ggraph \
-#    r-cran-ggiraph \
-#    r-cran-ggnetwork \
-#    r-cran-ggTimeSeries     
-# and this one simply crashes:
-#RUN echo "install.packages('ggrepel',repos='https://cran.rstudio.com')" > /tmp/install.R && \
-#    echo "install.packages('ggraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
-#    echo "install.packages('ggiraph',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
-#    echo "install.packages('ggnetwork',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
-#    echo "install.packages('ggTimeSeries',repos='https://cran.rstudio.com')" >> /tmp/install.R && \
-#    Rscript /tmp/install.R
 
 USER $NB_UID
 
-RUN wget https://github.com/eurostat/PRost/blob/master/notebooks/eurostat_package_test.ipynb && \
-    echo "IRkernel::installspec();" > install.R && \
+RUN echo "IRkernel::installspec();" > install.R && \
     Rscript install.R
-    
+ 
+RUN wget https://github.com/eurostat/PRost/blob/master/notebooks/eurostat_package_test.ipynb && \ 
+    wget https://github.com/eurostat/PRost/blob/master/notebooks/eurostat_package_tutorial.ipynb  
