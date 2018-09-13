@@ -28,6 +28,7 @@ Run your own script into a notebook, like in the examples below:
 
 * a [quick and dirty notebook](https://nbviewer.jupyter.org/github/eurostat/PRost/blob/master/notebooks/eurostat_package_tutorial.ipynb) reproducing the tutorial for `R eurostat` package.
 * an [R test notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_package_test.ipynb) 
+* a [notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_flagr_test.ipynb) to test the [`flagr`](https://github.com/eurostat/flagr) package
 * ...
 
 **Notes**
