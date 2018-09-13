@@ -90,7 +90,7 @@ RUN apt-get update && \
 
 RUN echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
     echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
-    echo "install.packages(c('eurostat','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+    echo "install.packages(c('eurostat','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     echo "devtools::install_github('eurostat/flagr');" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
