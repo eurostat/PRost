@@ -101,6 +101,6 @@ RUN echo "IRkernel::installspec();" > install.R && \
     Rscript install.R
  
 RUN wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_package_test.ipynb && \ 
-    wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_flagr_test.ipynb && \ 
+#    wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_flagr_test.ipynb && \ 
     wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_package_tutorial.ipynb  
     
