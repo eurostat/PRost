@@ -20,18 +20,6 @@ The project `PRost` is part of the Methodological Network initiative on user int
     <tr> <td align="left"><i>license</i></td> <td align="left"><a href="https://joinup.ec.europa.eu/sites/default/files/eupl1.1.-licence-en_0.pdfEUPL">EUPL</a> </td> </tr> 
 </table>
 
-**Rationale**
-
-This contribution advocates for widening the use of Open Source Software (OSS) , "beyond just `R`", to: 
-* support new modes for production of official statistics,
-* create new ways to share official statistics
-
-in a constantly evolving data ecosystem,
-
-While `R` is currently the leading OSS within the statistical community, and the most widespread in statistical organisations, it is believed that one should not focus on isolated OSS, instead it should be possible to implement statistical methods in whatever OSS that fit best and integrate them seamlessly into the statistical production system. 
-
-Today's technological solutions, _e.g._ flexible APIs (_e.g._, _Eurostat_ REST API), interactive notebooks (_e.g._, `Jupyter` notebook) and virtualised containers (_e.g._, `docker`), can support an approach where algorithms are delivered as – portable, scalable, harmonised and encapsulated – services regardless of the software used. 
-
 **Run**
 
 [**Launch a notebook with both `R` and `Python`**](https://mybinder.org/v2/gh/eurostat/PRost/master) installed together with the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package.
@@ -47,9 +35,17 @@ Run your own script into a notebook, like in the examples below:
 
 **Notes**
 
-The notebook is running on the [binder](https://mybinder.org/) platform, which automatically turns the `Dockerfile` in this repository into an interactive notebook.
+This contribution advocates for widening the use of Open Source Software (OSS) , "beyond just `R`", to: 
+* support new modes for production of official statistics,
+* create new ways to share official statistics
 
-Current `Dockerfile` is an extension of the [`Jupyter Data Science Stack`](https://hub.docker.com/r/jupyter/datascience-notebook/).
+in a constantly evolving data ecosystem,
+
+While `R` is currently the leading OSS within the statistical community, and the most widespread in statistical organisations, it is believed that one should not focus on isolated OSS, instead it should be possible to implement statistical methods in whatever OSS that fit best and integrate them seamlessly into the statistical production system. 
+
+Today's technological solutions, _e.g._ flexible APIs (_e.g._, _Eurostat_ REST API), interactive notebooks (_e.g._, `Jupyter` notebook) and virtualised containers (_e.g._, `docker`), can support an approach where algorithms are delivered as – portable, scalable, harmonised and encapsulated – services regardless of the software used. 
+
+The notebooks are running on the [binder](https://mybinder.org/) platform, which automatically turns the `Dockerfile` in this repository into an interactive notebook. Current `Dockerfile` is an extension of the [`Jupyter Data Science Stack`](https://hub.docker.com/r/jupyter/datascience-notebook/).
 
 **<a name="Sources"></a>Data sources**
 
