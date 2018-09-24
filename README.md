@@ -61,8 +61,11 @@ The notebooks are running on the [binder](https://mybinder.org/) platform, which
 
 **<a name="References"></a>References**
 
+* Boettiger C. and Eddelbuettel D. (2018): [**An introduction to Rocker: Docker containers for R**](https://journal.r-project.org/archive/2017/RJ-2017-065/RJ-2017-065.pdf), _The R Journal_, 9(2):527-536.
 * Lahti L., Huovari J., Kainu M., and Biecek, P. (2017): [**Retrieval and analysis of Eurostat open data with the eurostat package**](https://journal.r-project.org/archive/2017/RJ-2017-019/RJ-2017-019.pdf), _The R Journal_, 9(1):385-392.
+* Marwick B., Boettiger C., and Mullen L. (2017): [**Packaging data analytical work reproducibly using R (and friends)**](https://doi.org/10.7287/peerj.preprints.3192v1), _The American Statistician_, doi:[10.1080/00031305.2017.1375986](https://doi.org/10.1080/00031305.2017.1375986).
 * Grazzini J., Museux J.-M. and Hahn M. (2018): [**Empowering and interacting with statistical produsers: A practical example with Eurostat data as a service**](https://www.researchgate.net/publication/325973362_Empowering_and_interacting_with_statistical_produsers_a_practical_example_with_Eurostat_data_as_a_service), in Proc. _Conference of European Statistics Stakeholders_.
+* Boettiger C. (2015): [**An introduction to Docker for reproducible research**](http://arxiv.org/abs/1410.0846), _ACM SIGOPS Operating Systems Review_, Special Issue on Repeatability and Sharing of Experimental Artifacts, 49(1):71-79, doi:[10.1145/2723872.2723882](https://doi.org/10.1145/2723872.2723882).
 * [How to Dockerize an `R Shiny` App](https://towardsdatascience.com/how-to-dockerize-an-r-shiny-app-part-1-d4267659312a).
 * [Generating Dockerfiles for reproducible research with `R`](https://o2r.info/2017/05/30/containerit-package/).
 * [Dockerfile basics and best practices](https://docs.datascience.com/en/master/appendix-1/dockerfile-basics-and-best-practices-1.html).
