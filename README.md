@@ -12,10 +12,10 @@ The project `PRost` is part of the Methodological Network initiative on user int
     <tr> <td align="left"><i>status</i></td> <td align="left">since 2018 &ndash; <b>on-going</b></td></tr> 
     <tr> <td align="left"><i>contributors</i></td> 
     <td align="left" valign="middle">
-<a href="https://github.com/gjacopo"><img src="https://github.com/mmatyi.png" width="40"></a>
+<a href="https://github.com/mmatyi"><img src="https://github.com/mmatyi.png" width="40"></a>
 <a href="https://github.com/gjacopo"><img src="https://github.com/gjacopo.png" width="40"></a>
-<a href="https://github.com/gjacopo"><img src="https://github.com/reisfe.png" width="40"></a>
-<a href="https://github.com/gjacopo"><img src="https://github.com/oloski.png" width="40"></a>
+<a href="https://github.com/reisfe"><img src="https://github.com/reisfe.png" width="40"></a>
+<a href="https://github.com/oloski"><img src="https://github.com/oloski.png" width="40"></a>
 </td> </tr> 
     <tr> <td align="left"><i>license</i></td> <td align="left"><a href="https://joinup.ec.europa.eu/sites/default/files/eupl1.1.-licence-en_0.pdfEUPL">EUPL</a> </td> </tr> 
 </table>
