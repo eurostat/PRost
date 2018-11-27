@@ -56,6 +56,7 @@ RUN apt-get update && \
     r-cran-e1071 \
     r-cran-stringr \
     r-cran-stringi \
+    r-cran-knitr \
     r-cran-rcpp \
     r-cran-rjava \
     r-cran-randomforest && apt-get clean && \
