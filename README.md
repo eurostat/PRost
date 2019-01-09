@@ -20,9 +20,9 @@ The project `PRost` is part of the Methodological Network initiative on user int
     <tr> <td align="left"><i>license</i></td> <td align="left"><a href="https://joinup.ec.europa.eu/sites/default/files/eupl1.1.-licence-en_0.pdfEUPL">EUPL</a> </td> </tr> 
 </table>
 
-**Run**
+**Quick start**
 
-**Launch a notebook running both `R` and `Python`**: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/eurostat/PRost/master) with the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package already installed!
+**Launch a notebook running both `R` and `Python`: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/eurostat/PRost/master) with the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package already installed!**
 
 **Examples**
 
