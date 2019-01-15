@@ -103,6 +103,5 @@ RUN echo "IRkernel::installspec();" > install.R && \
  
 RUN wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_package_test.ipynb && \ 
     wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_flagr_test.ipynb && \ 
-    wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_package_tutorial.ipynb && \ 
-    wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/statistics_explained_youth.ipynb  
+    wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_package_tutorial.ipynb 
     
