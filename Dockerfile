@@ -106,4 +106,4 @@ RUN wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/euros
     wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_flagr_test.ipynb && \ 
     wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_package_tutorial.ipynb 
    
-RUN git clone https://github.com/eurostat/statistics-explained.git
+# RUN git clone https://github.com/eurostat/statistics-coded.git
