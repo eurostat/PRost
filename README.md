@@ -29,7 +29,7 @@ The project `PRost` is part of the Methodological Network initiative on user int
 Run your own script into a notebook, like in the examples below:
 
 * a [quick and dirty notebook](https://nbviewer.jupyter.org/github/eurostat/PRost/blob/master/notebooks/eurostat_package_tutorial.ipynb) reproducing the tutorial for `R eurostat` package.
-* an empty [R test notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_package_test.ipynb) with the `eurostat` package
+* an empty [R test notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_package_test.ipynb) with the `rdbnomics`, `eurostat` and `restatapi` package to retrieve data from Eurostat database
 * a [notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_flagr_test.ipynb) to test the [`flagr`](https://github.com/eurostat/flagr) package
 * ...
 
