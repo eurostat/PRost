@@ -22,14 +22,14 @@ The project `PRost` is part of the Methodological Network initiative on user int
 
 **Quick start**
 
-**Launch a notebook running both `R` and `Python`: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/eurostat/PRost/master) with the [`R eurostat`](https://cran.r-project.org/web/packages/eurostat/index.html) package already installed!**
+**Launch a notebook running both `R` and `Python`: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/eurostat/PRost/master) with packages to access Eurostat database already installed!**
 
 **Examples**
 
 Run your own script into a notebook, like in the examples below:
 
 * a [quick and dirty notebook](https://nbviewer.jupyter.org/github/eurostat/PRost/blob/master/notebooks/eurostat_package_tutorial.ipynb) reproducing the tutorial for `R eurostat` package.
-* an empty [R test notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_package_test.ipynb) with the `rdbnomics`, `eurostat` and `restatapi` package to retrieve data from Eurostat database
+* an empty [R test notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_package_test.ipynb) with the  `eurostat`, `rdbnomics`,`restatapi` and `TSsdmx` packages to retrieve data from Eurostat database
 * a [notebook](https://mybinder.org/v2/gh/eurostat/prost/master?filepath=eurostat_flagr_test.ipynb) to test the [`flagr`](https://github.com/eurostat/flagr) package
 * ...
 
