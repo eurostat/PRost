@@ -91,7 +91,8 @@ RUN apt-get update && \
  #    fix-permissions /home/$NB_USER
 
 RUN echo "update.packages" >> /tmp/install.R && \
-    echo "install.packages('devtools',repos='https://cloud.r-project.org');"  > /tmp/install.R && \
+    echo "install.packages('glue',,repos='https://cloud.r-project.org');"  > /tmp/install.R && \
+    echo "install.packages('devtools',,repos='https://cloud.r-project.org');"  > /tmp/install.R && \
     echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
     echo "install.packages(c('rJava','rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     echo "devtools::install_github('eurostat/flagr');" >> /tmp/install.R && \
