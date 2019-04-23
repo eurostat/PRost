@@ -15,13 +15,6 @@ RUN apt-get update && \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN . /etc/os-release && \
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3D3D3ACC && \
-    apt-get update && \
-    apt-get install -y --no-install-recommends \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* 
-
 USER $NB_USER
 
 # R packages including IRKernel which gets installed globally.
