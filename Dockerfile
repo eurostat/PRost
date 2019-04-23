@@ -19,7 +19,7 @@ RUN . /etc/os-release && \
     apt-get update && \
     apt-get install -y --no-install-recommends \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /var/lib/apt/lists/* 
 
 USER $NB_USER
 
