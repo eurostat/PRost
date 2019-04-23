@@ -15,11 +15,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN . /etc/os-release && \
-    echo "deb http://ppa.launchpad.net/staticfloat/juliareleases/ubuntu $VERSION_CODENAME main" > /etc/apt/sources.list.d/julia.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3D3D3ACC && \
     apt-get update && \
     apt-get install -y --no-install-recommends \
-    julia && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
 
