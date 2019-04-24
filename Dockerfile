@@ -11,6 +11,8 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     fonts-dejavu \
     gfortran \
+    java-common \
+    r-cran-rjava \
     gnupg \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
