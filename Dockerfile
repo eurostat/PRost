@@ -12,8 +12,14 @@ RUN apt-get update && \
     fonts-dejavu \
     gfortran \
     java-common \
+    default-jdk \
+    default-jdk-headless \
     r-cran-rjava \
+    build-essential \
+    libgit2-dev \
     gnupg \
+     apt-utils \
+    software-properties-common \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
