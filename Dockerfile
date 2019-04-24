@@ -20,7 +20,9 @@ RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.
     echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
-
-
 USER $NB_USER
 
+RUN wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_database_test.ipynb && \ 
+    wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_flagr_test.ipynb && \ 
+    wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_package_tutorial.ipynb 
+   
