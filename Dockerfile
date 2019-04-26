@@ -18,6 +18,7 @@ RUN apt-get update && \
     gnupg \
     mc \
     r-cran-rjava \
+    r-base-dev \
     apt-utils \
     software-properties-common \
     gcc && apt-get clean && \
