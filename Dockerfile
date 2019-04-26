@@ -12,6 +12,11 @@ RUN apt-get update && \
     gfortran \
     java-common \
     build-essential \
+    libudunits2-0 \
+    libudunits2-dev \
+    libgdal-dev \
+    libgit2-26 \
+    libgit2-dev \
     gnupg \
     mc \
     apt-utils \
