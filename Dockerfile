@@ -16,9 +16,9 @@ RUN apt-get update && \
     libudunits2-dev \
     libgdal20 \
     libgdal-dev \
-    libgeos \
-    libgeos-dev \
-    libproj \ 
+    libgeos-3.6.2 \
+    libproj9 \
+    libproj13 \ 
     libproj-dev \
     libgit2-dev \
     gnupg \
