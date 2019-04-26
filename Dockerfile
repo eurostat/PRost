@@ -16,6 +16,7 @@ RUN apt-get update && \
     default-jdk-headless \
     build-essential \
     gnupg \
+    mc \
     r-cran-rjava \
     apt-utils \
     software-properties-common \
