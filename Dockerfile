@@ -12,12 +12,12 @@ RUN apt-get update && \
     gfortran \
     java-common \
     build-essential \
-    libudunits2-0 \
-#    libudunits2-dev \
-#    libgdal20 \
-#    libgdal-dev \
-#    libgeos-dev \
-#    libproj-dev \
+ #   libudunits2-0 \
+ #   libudunits2-dev \
+ #   libgdal20 \
+ #   libgdal-dev \
+ #   libgeos-dev \
+ #   libproj-dev \
     libgit2-dev \
     gnupg \
     mc \
@@ -27,6 +27,11 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN conda install --quiet --yes \
+    'gdal' \
+    'libgdal' \
+    'geos' \
+    'udunits2' \
+    'proj4' \
     'r-rjava' \
     'r-rgdal' \
     'r-rgeos' \
