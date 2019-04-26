@@ -28,6 +28,7 @@ RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9 && \
 RUN apt-get update && \
     apt-get install -y \
     r-base \
+    r-api-3.4 \
     r-base-core \
     r-base-dev \
     r-cran-plyr \
