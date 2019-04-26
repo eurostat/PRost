@@ -27,7 +27,7 @@ RUN apt-get update && \
 #RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #RUN echo "install.packages(c('rJava','rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra','eurostat','flagr'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
-RUN echo "R CMD javareconf" && \
+RUN echo "R CMD javareconf -e" && \
     echo "install.packages(c('RJDemetra'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
