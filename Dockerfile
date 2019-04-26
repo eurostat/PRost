@@ -17,8 +17,7 @@ RUN apt-get update && \
     libgdal20 \
     libgdal-dev \
     libgeos-3.6.2 \
-    libproj9 \
-    libproj13 \ 
+    libproj12 \ 
     libproj-dev \
     libgit2-dev \
     gnupg \
