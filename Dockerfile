@@ -28,7 +28,7 @@ RUN conda install --quiet --yes \
     'r-rjava' && \
      conda clean -tipsy && \
      fix-permissions $CONDA_DIR && \
-# fix-permissions /home/$NB_USER
+     fix-permissions /home/$NB_USER
 #RUN cp /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so /usr/lib/jvm/java-11-openjdk-amd64/lib/libjvm.so && \
 #    cp /usr/lib/jvm/java-11-openjdk-amd64/lib/server/classes.jsa /usr/lib/jvm/java-11-openjdk-amd64/lib/classes.jsa 
 #    R CMD javareconf
