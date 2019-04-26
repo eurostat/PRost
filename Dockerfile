@@ -13,11 +13,11 @@ RUN apt-get update && \
     java-common \
     build-essential \
     libudunits2-0 \
-    libudunits2-dev \
-    libgdal20 \
-    libgdal-dev \
-    libgeos-dev \
-    libproj-dev \
+#    libudunits2-dev \
+#    libgdal20 \
+#    libgdal-dev \
+#    libgeos-dev \
+#    libproj-dev \
     libgit2-dev \
     gnupg \
     mc \
@@ -28,6 +28,9 @@ RUN apt-get update && \
 
 RUN conda install --quiet --yes \
     'r-rjava' \
+    'r-rgdal' \
+    'r-rgeos' \
+    'r-gdtools' \
     'r-sf' && \
      conda clean -tipsy && \
      fix-permissions $CONDA_DIR && \
