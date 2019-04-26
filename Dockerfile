@@ -26,7 +26,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN conda install --quiet --yes \
-    'r-rjava' && \
+    'r-rjava' \
+    'r-sf' && \
      conda clean -tipsy && \
      fix-permissions $CONDA_DIR && \
      fix-permissions /home/$NB_USER
