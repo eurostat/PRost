@@ -15,7 +15,7 @@ RUN apt-get update && \
     libudunits2-0 \
     libudunits2-dev \
     libgdal-dev \
-    libgit2-26 \
+    libgeos-dev \
     libgit2-dev \
     gnupg \
     mc \
