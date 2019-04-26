@@ -15,6 +15,8 @@ RUN apt-get update && \
     libudunits2-0 \
     libudunits2-dev \
     libgdal20 \
+    gdal-bin \
+    gdal-data \
     libgdal-dev \
     libgeos-3.6.2 \
     libproj12 \ 
