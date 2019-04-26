@@ -17,6 +17,7 @@ RUN apt-get update && \
     libgdal20 \
     libgdal-dev \
     libgeos-dev \
+    libproj-dev \
     libgit2-dev \
     gnupg \
     mc \
