@@ -14,7 +14,7 @@ RUN apt-get update && \
     build-essential \
     libudunits2-0 \
     libudunits2-dev \
-    libgdal \
+    libgdal20 \
     libgdal-dev \
     libgeos-dev \
     libgit2-dev \
