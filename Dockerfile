@@ -12,8 +12,8 @@ RUN apt-get update && \
     fonts-dejavu \
     gfortran \
     java-common \
-    openjdk-9-jdk \
-    openjdk-9-jre \
+    openjdk-11-jdk \
+    openjdk-11-jre \
     build-essential \
     gnupg \
     mc \
