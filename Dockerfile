@@ -26,8 +26,8 @@ RUN apt-get update && \
 
 
 RUN cp /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so /usr/lib/jvm/java-11-openjdk-amd64/lib/libjvm.so && \
-    cp /usr/lib/jvm/java-11-openjdk-amd64/lib/server/classes.jsa /usr/lib/jvm/java-11-openjdk-amd64/lib/classes.jsa && \
-    R CMD javareconf
+    cp /usr/lib/jvm/java-11-openjdk-amd64/lib/server/classes.jsa /usr/lib/jvm/java-11-openjdk-amd64/lib/classes.jsa 
+#    R CMD javareconf
 #RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #RUN echo "install.packages(c('rJava','rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra','eurostat','flagr'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #RUN R CMD javareconf && \
@@ -36,6 +36,8 @@ RUN cp /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so /usr/lib/jvm/java
 #    Rscript /tmp/install.R
     
 USER $NB_USER
+
+RUN R CMD javareconf -e 
 
 RUN wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_database_test.ipynb && \ 
     wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_flagr_test.ipynb && \ 
