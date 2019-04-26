@@ -45,7 +45,7 @@ RUN apt-get update && \
     r-cran-stringi \
     r-cran-knitr \
     r-cran-rcpp \
-    r-cran-rjava \
+    r-cran-rjava && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
