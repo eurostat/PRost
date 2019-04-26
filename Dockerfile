@@ -31,7 +31,7 @@ RUN conda install --quiet --yes \
      fix-permissions /home/$NB_USER
 
 #RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
-RUN echo "install.packages(c('rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rjson','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra','eurostat','flagr','restatapi'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+RUN echo "install.packages(c('restatapi','eurostat','rdbnomics','TSsdmx','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rjson','rsdmx','leaflet','shinyjs','TSdbi','timeSeries','RJDemetra','flagr','ggdemetra'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
