@@ -15,18 +15,6 @@ RUN apt-get update && \
     default-jdk \
     default-jdk-headless \
     build-essential \
-    libgit2-dev \
-    libssl-dev \
-    libgdal-dev \
-    libssh2-1 \
-    libssh2-1-dev \
-    libgit2-26 \
-    libgit2-dev \
-    libunwind-dev \
-    libzmq3-dev \
-    libcairo2-dev \
-    libopenblas-base \
-    libopenblas-dev \
     gnupg \
     apt-utils \
     software-properties-common \
