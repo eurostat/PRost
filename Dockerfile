@@ -25,7 +25,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 
-
+RUN cp /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so /usr/lib/jvm/java-11-openjdk-amd64/lib/libjvm.so && \
+    cp /usr/lib/jvm/java-11-openjdk-amd64/lib/server/classes.jsa /usr/lib/jvm/java-11-openjdk-amd64/lib/classes.jsa
 #RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #RUN echo "install.packages(c('rJava','rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra','eurostat','flagr'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #RUN R CMD javareconf && \
