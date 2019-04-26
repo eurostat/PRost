@@ -16,39 +16,13 @@ RUN apt-get update && \
     default-jdk-headless \
     build-essential \
     gnupg \
+    r-cran-rjava \
     apt-utils \
     software-properties-common \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9 && \
-    gpg -a --export E084DAB9 | apt-key add - && \
-    add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
 
-RUN apt-get update && \
-    apt-get install -y \
-    r-base \
-    r-api-3.4 \
-    r-base-core \
-    r-base-dev \
-    r-cran-plyr \
-    r-cran-rsqlite \
-    r-cran-caret \
-    r-cran-ggplot2 \
-    r-cran-reshape2 \
-    r-cran-rcurl \
-    r-cran-crayon \
-    r-cran-rjson \
-    r-cran-jsonlite \
-    r-cran-base64enc \
-    r-cran-e1071 \
-    r-cran-stringr \
-    r-cran-stringi \
-    r-cran-knitr \
-    r-cran-rcpp \
-    r-cran-rjava && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
 
 #RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #RUN echo "install.packages(c('rJava','rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra','eurostat','flagr'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
