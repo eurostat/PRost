@@ -12,8 +12,8 @@ RUN apt-get update && \
     fonts-dejavu \
     gfortran \
     java-common \
-    default-jdk \
-    default-jdk-headless \
+    openjdk-9-jdk \
+    openjdk-9-jre \
     build-essential \
     gnupg \
     mc \
@@ -29,7 +29,7 @@ RUN apt-get update && \
 #RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #RUN echo "install.packages(c('rJava','rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra','eurostat','flagr'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 RUN R CMD javareconf && \
-#    echo "install.packages(c('RJDemetra'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+    echo "install.packages(c('RJDemetra'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
