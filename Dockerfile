@@ -24,8 +24,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 #RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
-RUN echo "install.packages(c('rJava','rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra','eurostat','flagr'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
-    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
+#RUN echo "install.packages(c('rJava','rdbnomics','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rsdmx','leaflet','shinyjs','TSsdmx','TSdbi','timeSeries','RJDemetra','eurostat','flagr'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+#    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
+RUN echo "install.packages(c('rJava'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
 USER $NB_USER
