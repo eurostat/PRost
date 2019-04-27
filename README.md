@@ -22,7 +22,7 @@ The project `PRost` is part of the Methodological Network initiative on user int
 
 **Quick start**
 
-**Launch a notebook running both `R` and `Python`: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/eurostat/PRost/master) with packages already installed to access Eurostat database!**
+**Launch a notebook running both `R` and `Python`: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/eurostat/PRost/master?filepath=index.ipynb) with packages already installed to access Eurostat database!**
 
 **Examples**
 
