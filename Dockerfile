@@ -18,6 +18,9 @@ RUN apt-get update && \
     gdal-bin \
     gdal-data \
     libgdal-dev \
+    libssl-dev \
+    libssh2-1 \
+    libssh2-1-dev \
     libgeos-3.6.2 \
     libproj12 \ 
     libproj-dev \
@@ -26,6 +29,11 @@ RUN apt-get update && \
     libpoppler-dev \
     libgit2-dev \
     gnupg \
+    libunwind-dev \
+    libzmq3-dev \
+    libcairo2-dev \
+    libopenblas-base \
+    libopenblas-dev \
     mc \
     apt-utils \
     software-properties-common \
