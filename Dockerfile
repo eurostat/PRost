@@ -22,13 +22,15 @@ RUN apt-get update && \
     libssh2-1 \
     libssh2-1-dev \
     libgeos-3.6.2 \
-    libproj12 \ 
+    libproj12 \
+    proj-bin \
     libproj-dev \
     libpoppler73 \
     poppler-utils \
     libpoppler-dev \
     libgit2-dev \
     gnupg \
+    libtool \ 
     libunwind-dev \
     libzmq3-dev \
     libcairo2-dev \
