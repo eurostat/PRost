@@ -33,6 +33,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN conda install --quiet --yes \
+    'poppler' \
     'r-rjava' \
     'r-rgdal' \
     'r-rgeos' \
