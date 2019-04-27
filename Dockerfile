@@ -34,6 +34,8 @@ RUN apt-get update && \
 
 RUN conda install --quiet --yes \
     'poppler' \
+    'gdal' \
+    'libgdal' \
     'r-rjava' \
     'r-rgdal' \
     'r-rgeos' \
