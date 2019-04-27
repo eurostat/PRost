@@ -36,6 +36,13 @@ RUN apt-get update && \
     libcairo2-dev \
     libopenblas-base \
     libopenblas-dev \
+    libexpat1-dev \
+	libpq-dev \
+	libsqlite3-dev \
+	postgis \
+	r-base-dev \
+	gdb \
+	valgrind \
     mc \
     apt-utils \
     software-properties-common \
