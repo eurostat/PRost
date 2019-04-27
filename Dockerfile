@@ -39,7 +39,7 @@ RUN apt-get update && \
     mc \
     apt-utils \
     software-properties-common \
-    gcc && apt-get clean && \
+    gcc && apt-get configure && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 RUN conda install --quiet --yes \
