@@ -21,6 +21,9 @@ RUN apt-get update && \
     libgeos-3.6.2 \
     libproj12 \ 
     libproj-dev \
+    libpoppler73 \
+    poppler-utils \
+    libpoppler-dev \
     libgit2-dev \
     gnupg \
     mc \
