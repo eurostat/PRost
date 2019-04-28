@@ -5,9 +5,11 @@ FROM jupyter/datascience-notebook:87210526f381
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 
 USER root
-
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+    apt-utils 
+
+RUN apt-get install -y --no-install-recommends \
     fonts-dejavu \
     gfortran \
     java-common \
@@ -37,16 +39,15 @@ RUN apt-get update && \
     libopenblas-base \
     libopenblas-dev \
     libexpat1-dev \
-	libpq-dev \
-	libsqlite3-dev \
-	postgis \
-	r-base-dev \
-	gdb \
-	valgrind \
+    libpq-dev \
+    libsqlite3-dev \
+    postgis \
+    r-base-dev \
+    gdb \
+    valgrind \
     mc \
-    apt-utils \
     software-properties-common \
-    gcc && apt-get configure && apt-get clean && \
+    gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 RUN conda install --quiet --yes \
