@@ -10,8 +10,7 @@ RUN apt-get update && \
     apt-utils \ 
     software-properties-common && \
     add-apt-repository ppa:marutter/c2d4u3.5 && \
-    apt-get update && \
-    apt-get upgrade
+    apt-get update 
 
 RUN apt-get install -y --no-install-recommends \
     fonts-dejavu \
