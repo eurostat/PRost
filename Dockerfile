@@ -63,6 +63,7 @@ RUN apt-get install -y --no-install-recommends \
     r-base-core \
     r-base-dev \
     r-cran-broom \
+    r-cran-codetools \
     r-cran-crosstalk \
     r-cran-desc \
     r-cran-devtools \
