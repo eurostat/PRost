@@ -12,7 +12,8 @@ RUN apt-get update && \
     software-properties-common && \
     add-apt-repository ppa:marutter/c2d4u3.5 && \
     echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/" >> /etc/sources.list &&\
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 &&\
+    gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 &&\
+    gpg -a --export E298A3A825C0D65DFD57CBB651716619E084DAB9 | apt-key add - &&\
     apt-get update 
 
 RUN apt-get install -y --no-install-recommends \
