@@ -1,6 +1,7 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-FROM jupyter/datascience-notebook:87210526f381
+FROM jupyter/scipy-notebook
+#FROM jupyter/datascience-notebook:87210526f381
 
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 
