@@ -10,6 +10,8 @@ RUN apt-get update && \
     apt-utils \ 
     software-properties-common && \
     add-apt-repository ppa:marutter/c2d4u3.5 && \
+    echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/" >> /etc/sources.list &&\
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 &&\
     apt-get update 
 
 RUN apt-get install -y --no-install-recommends \
@@ -45,9 +47,13 @@ RUN apt-get install -y --no-install-recommends \
     libpq-dev \
     libsqlite3-dev \
     postgis \
+    r-base-core \
     r-base-dev \
-    r-cran-broom \    
+    r-cran-broom \
+    r-cran-crosstalk \
+    r-cran-desc \
     r-cran-devtools \
+    r-cran-dichromat \
     r-cran-dplyr \
     r-cran-eurostat \
     r-cran-ggforce \
@@ -58,8 +64,11 @@ RUN apt-get install -y --no-install-recommends \
     r-cran-htmlwidgets \
     r-cran-leaflet \
     r-cran-mapview \
+    r-cran-mgcv \
+    r-cran-nlme \
     r-cran-pkgbuild \
     r-cran-pkgload \
+    r-cran-pkgkitten \
     r-cran-plyr \
     r-cran-raster \
     r-cran-rcmdcheck \
@@ -70,6 +79,7 @@ RUN apt-get install -y --no-install-recommends \
     r-cran-rjdemetra \
     r-cran-rjava \
     r-cran-rjson \
+    r-cran-rprojroot \
     r-cran-scales \
     r-cran-sf \
     r-cran-sp \
@@ -77,8 +87,10 @@ RUN apt-get install -y --no-install-recommends \
     r-cran-tmaptools \
     r-cran-tidyr \
     r-cran-units \
+    r-cran-uuid \
     r-cran-usethis \
     r-cran-viridis \
+    r-cran-xml2 \
     gdb \
     valgrind \
     mc \
