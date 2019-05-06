@@ -9,6 +9,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     apt-utils \
     dirmngr \
+    gpg-agent \
     software-properties-common && \
     add-apt-repository ppa:marutter/c2d4u3.5 && \
     echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/" >> /etc/sources.list &&\
