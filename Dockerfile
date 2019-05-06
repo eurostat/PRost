@@ -116,8 +116,13 @@ RUN echo "install.packages(c('restatapi','rdbnomics','TSsdmx','ggiraph','ggnetwo
 #    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
+RUN echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
+    Rscript /tmp/install.R
+    
 USER $NB_USER
 
+RUN echo "IRkernel::installspec();" > install.R && \
+    Rscript install.R
 
 RUN wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_database_test.ipynb && \ 
     wget https://raw.githubusercontent.com/eurostat/PRost/master/notebooks/eurostat_flagr_test.ipynb && \ 
