@@ -7,7 +7,8 @@ MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 USER root
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    apt-utils \ 
+    apt-utils \
+    dirmngr \
     software-properties-common && \
     add-apt-repository ppa:marutter/c2d4u3.5 && \
     echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/" >> /etc/sources.list &&\
