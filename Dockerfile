@@ -23,6 +23,8 @@ RUN add-apt-repository ppa:marutter/c2d4u3.5 && \
     apt-get update &&\ 
     apt-get upgrade -y
 
+RUN apt-get dist-upgrade
+
 RUN apt-get install -y --no-install-recommends \
     fonts-dejavu \
     gfortran \
