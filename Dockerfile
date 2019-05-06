@@ -12,9 +12,9 @@ RUN apt-get update && \
     gpg-agent \
     software-properties-common 
 
-RUN sudo apt purge r-base r-recommended r-cran-* &&\
-    sudo apt autoremove &&\
-    sudo apt update
+#RUN sudo apt purge r-base r-recommended r-cran-* &&\
+#    sudo apt autoremove &&\
+#    sudo apt update
        
 RUN add-apt-repository ppa:marutter/c2d4u3.5 &&\
     add-apt-repository ppa:marutter/rrutter3.5 &&\
