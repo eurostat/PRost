@@ -110,7 +110,7 @@ RUN apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
  
-#RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+RUN R CMD javareconf
 RUN echo "install.packages(c('restatapi','rdbnomics','TSsdmx','ggiraph','ggnetwork','ggTimeSeries','plotrix','rsdmx','shinyjs','TSdbi','timeSeries','flagr','ggdemetra'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
     Rscript /tmp/install.R
