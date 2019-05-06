@@ -46,14 +46,39 @@ RUN apt-get install -y --no-install-recommends \
     libsqlite3-dev \
     postgis \
     r-base-dev \
+    r-cran-broom \    
     r-cran-devtools \
+    r-cran-dplyr \
     r-cran-eurostat \
+    r-cran-ggforce \
+    r-cran-ggplot2 \
     r-cran-ggrepel \
     r-cran-ggraph \
+    r-cran-htmltools \
+    r-cran-htmlwidgets \
+    r-cran-leaflet \
+    r-cran-mapview \
+    r-cran-pkgbuild \
+    r-cran-pkgload \
+    r-cran-plyr \
+    r-cran-raster \
+    r-cran-rcmdcheck \
+    r-cran-rcolorbrewer \
+    r-cran-rcpp \
+    r-cran-readr \
+    r-cran-refmanager \
     r-cran-rjdemetra \
     r-cran-rjava \
     r-cran-rjson \
+    r-cran-scales \
+    r-cran-sf \
+    r-cran-sp \
     r-cran-tmap \
+    r-cran-tmaptools \
+    r-cran-tidyr \
+    r-cran-units \
+    r-cran-usethis \
+    r-cran-viridis \
     gdb \
     valgrind \
     mc \
