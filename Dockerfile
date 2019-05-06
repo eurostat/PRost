@@ -7,7 +7,11 @@ MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 USER root
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    apt-utils 
+    apt-utils \ 
+    software-properties-common && \
+    add-apt-repository ppa:marutter/c2d4u3.5 && \
+    apt-get update && \
+    apt-get upgrade
 
 RUN apt-get install -y --no-install-recommends \
     fonts-dejavu \
@@ -43,28 +47,23 @@ RUN apt-get install -y --no-install-recommends \
     libsqlite3-dev \
     postgis \
     r-base-dev \
+    r-cran-devtools \
+    r-cran-eurostat \
+    r-cran-ggrepel \
+    r-cran-ggraph \
+    r-cran-rjdemetra \
+    r-cran-rjava \
+    r-cran-rjson \
+    r-cran-tmap \
     gdb \
     valgrind \
     mc \
-    software-properties-common \
     gcc && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN conda install --quiet --yes \
-    'poppler' \
-    'gdal' \
-    'libgdal' \
-    'r-rjava' \
-    'r-rgdal' \
-    'r-rgeos' \
-    'r-gdtools' \
-    'r-sf' && \
-     conda clean -tipsy && \
-     fix-permissions $CONDA_DIR && \
-     fix-permissions /home/$NB_USER
-
+ 
 #RUN echo "update.packages(repos='https://cloud.r-project.org')" >> /tmp/install.R && \
-RUN echo "install.packages(c('restatapi','eurostat','rdbnomics','TSsdmx','ggrepel','ggraph','ggiraph','ggnetwork','ggTimeSeries','plotrix','tmap','rjson','rsdmx','leaflet','shinyjs','TSdbi','timeSeries','RJDemetra','flagr','ggdemetra'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+RUN echo "install.packages(c('restatapi','rdbnomics','TSsdmx','ggiraph','ggnetwork','ggTimeSeries','plotrix','rsdmx','shinyjs','TSdbi','timeSeries','flagr','ggdemetra'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
