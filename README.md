@@ -59,6 +59,10 @@ The notebooks are running on the [binder](https://mybinder.org/) platform, which
 * `Jupyter` notebook [docker stack](https://github.com/jupyter/docker-stacks), in particular the [R stack](https://github.com/jupyter/docker-stacks/tree/master/r-notebook) and the [Data Science stack](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html). Note also list of [existing images](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook), [get started](https://docs.docker.com/get-started/) and [how-to](https://www.dataquest.io/blog/docker-data-science/).
 * [Binder environment](https://mybinder.org/) to run `Jupyter` notebooks. See the [how-to](https://blog.jupyter.org/binder-2-0-a-tech-guide-2017-fd40515a3a84).
 
+**Other**
+
+* A [cool notebook](https://github.com/CHesseling/Eurostat_NUTS2_mapping/blob/master/Eurostat%20API%20GeoPandas.ipynb) shwoing how to represent _Eurostat_ NUTS data over a map using _Python_ package [_eurostat-api-client_](https://github.com/opus-42/eurostat-api-client).
+
 **<a name="References"></a>References**
 
 * Boettiger C. and Eddelbuettel D. (2018): [**An introduction to Rocker: Docker containers for R**](https://journal.r-project.org/archive/2017/RJ-2017-065/RJ-2017-065.pdf), _The R Journal_, 9(2):527-536.
