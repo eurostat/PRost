@@ -61,7 +61,7 @@ The notebooks are running on the [binder](https://mybinder.org/) platform, which
 
 **Other**
 
-* A [cool notebook](https://github.com/CHesseling/Eurostat_NUTS2_mapping/blob/master/Eurostat%20API%20GeoPandas.ipynb) shwoing how to represent _Eurostat_ NUTS data over a map using _Python_ package [_eurostat-api-client_](https://github.com/opus-42/eurostat-api-client).
+* A [cool notebook](https://github.com/CHesseling/Eurostat_NUTS2_mapping/blob/master/Eurostat%20API%20GeoPandas.ipynb) showing how to represent _Eurostat_ NUTS data over a map using _Python_ package [_eurostat-api-client_](https://github.com/opus-42/eurostat-api-client).
 
 **<a name="References"></a>References**
 
