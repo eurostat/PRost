@@ -113,11 +113,11 @@ RUN apt-get install -y --no-install-recommends \
 
  
 RUN R CMD javareconf
-RUN echo "install.packages(c('restatapi','rdbnomics','TSsdmx','ggiraph','ggnetwork','ggTimeSeries','plotrix','rsdmx','shinyjs','TSdbi','timeSeries','flagr','ggdemetra','eurostat'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+RUN echo "install.packages(c('restatapi','rdbnomics','TSsdmx','ggiraph','ggnetwork','ggTimeSeries','plotrix','rsdmx','shinyjs','TSdbi','timeSeries','flagr','ggdemetra','eurostat'),repos='https://cloud.r-project.org')" > /tmp/install.R && \
 #    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
-RUN echo "devtools::install_github('IRkernel/IRkernel');" >> /tmp/install.R && \
+RUN echo "devtools::install_github('IRkernel/IRkernel');" > /tmp/install.R && \
     Rscript /tmp/install.R
     
 USER $NB_USER
