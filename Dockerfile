@@ -69,7 +69,7 @@ RUN apt-get install -y --no-install-recommends \
     r-cran-devtools \
     r-cran-dichromat \
     r-cran-dplyr \
-    r-cran-eurostat \
+#    r-cran-eurostat \
     r-cran-ggforce \
     r-cran-ggplot2 \
     r-cran-ggrepel \
@@ -97,7 +97,7 @@ RUN apt-get install -y --no-install-recommends \
     r-cran-scales \
 #    r-cran-sf \
     r-cran-sp \
-    r-cran-tmap \
+#    r-cran-tmap \
 #    r-cran-tmaptools \
     r-cran-tidyr \
     r-cran-units \
@@ -113,7 +113,7 @@ RUN apt-get install -y --no-install-recommends \
 
  
 RUN R CMD javareconf
-RUN echo "install.packages(c('restatapi','rdbnomics','TSsdmx','ggiraph','ggnetwork','ggTimeSeries','plotrix','rsdmx','shinyjs','TSdbi','timeSeries','flagr','ggdemetra','sf'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
+RUN echo "install.packages(c('restatapi','rdbnomics','TSsdmx','ggiraph','ggnetwork','ggTimeSeries','plotrix','rsdmx','shinyjs','TSdbi','timeSeries','flagr','ggdemetra','eurostat'),repos='https://cloud.r-project.org')" >> /tmp/install.R && \
 #    echo "devtools::install_github('eurostat/restatapi');" >> /tmp/install.R && \
     Rscript /tmp/install.R
     
