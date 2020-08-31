@@ -33,22 +33,6 @@ Today's technological solutions, _e.g._ flexible APIs (_e.g._, _Eurostat_ REST A
 
 The notebooks are running on the [binder](https://mybinder.org/) platform, which automatically turns the `Dockerfile` in this repository into an interactive notebook. Current `Dockerfile` is an extension of the [`Jupyter Data Science Stack`](https://hub.docker.com/r/jupyter/datascience-notebook/).
 
-**<a name="Sources"></a>Data sources**
-
-* EU open data initiatives: [pan-European public data infrastructure](http://data.europa.eu).
-* Eurostat database: [online catalog](http://ec.europa.eu/eurostat/data/database) and [bulk download facility](http://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing).
-* Eurostat web-services: access to [JSON and unicode data](http://ec.europa.eu/eurostat/web/json-and-unicode-web-services/about-this-service), the [REST API](http://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request) with its [query builder](http://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/query-builder).
-
-**<a name="Software"></a>Software resources and services**
-
-* Package [_eurostat_ `R`](http://ropengov.github.io/eurostat) to access open data from Eurostat.
-* `Jupyter` notebook [docker stack](https://github.com/jupyter/docker-stacks), in particular the [R stack](https://github.com/jupyter/docker-stacks/tree/master/r-notebook) and the [Data Science stack](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html). Note also list of [existing images](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook), [get started](https://docs.docker.com/get-started/) and [how-to](https://www.dataquest.io/blog/docker-data-science/).
-* [Binder environment](https://mybinder.org/) to run `Jupyter` notebooks. See the [how-to](https://blog.jupyter.org/binder-2-0-a-tech-guide-2017-fd40515a3a84).
-
-**Other**
-
-* A [cool notebook](https://github.com/CHesseling/Eurostat_NUTS2_mapping/blob/master/Eurostat%20API%20GeoPandas.ipynb) showing how to represent _Eurostat_ NUTS data over a map using _Python_ package [_eurostat-api-client_](https://github.com/opus-42/eurostat-api-client).
-
 **About**
 
 <table align="center">
@@ -62,6 +46,19 @@ The notebooks are running on the [binder](https://mybinder.org/) platform, which
 </td> </tr> 
     <tr> <td align="left"><i>license</i></td> <td align="left"><a href="https://joinup.ec.europa.eu/sites/default/files/eupl1.1.-licence-en_0.pdfEUPL">EUPL</a> </td> </tr> 
 </table>
+
+**<a name="Sources"></a>Data sources**
+
+* EU open data initiatives: [pan-European public data infrastructure](http://data.europa.eu).
+* Eurostat database: [online catalog](http://ec.europa.eu/eurostat/data/database) and [bulk download facility](http://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing).
+* Eurostat web-services: access to [JSON and unicode data](http://ec.europa.eu/eurostat/web/json-and-unicode-web-services/about-this-service), the [REST API](http://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request) with its [query builder](http://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/query-builder).
+
+**<a name="Software"></a>Software resources and services**
+
+* Package [_eurostat_ `R`](http://ropengov.github.io/eurostat) to access open data from Eurostat.
+* `Jupyter` notebook [docker stack](https://github.com/jupyter/docker-stacks), in particular the [R stack](https://github.com/jupyter/docker-stacks/tree/master/r-notebook) and the [Data Science stack](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html). Note also list of [existing images](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook), [get started](https://docs.docker.com/get-started/) and [how-to](https://www.dataquest.io/blog/docker-data-science/).
+* [Binder environment](https://mybinder.org/) to run `Jupyter` notebooks. See the [how-to](https://blog.jupyter.org/binder-2-0-a-tech-guide-2017-fd40515a3a84).
+* A [cool notebook](https://github.com/CHesseling/Eurostat_NUTS2_mapping/blob/master/Eurostat%20API%20GeoPandas.ipynb) showing how to represent _Eurostat_ NUTS data over a map using _Python_ package [_eurostat-api-client_](https://github.com/opus-42/eurostat-api-client).
 
 **<a name="References"></a>References**
 
